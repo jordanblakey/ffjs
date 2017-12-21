@@ -28,6 +28,7 @@ Single Module:
 
 ``` js
 import { array } from 'ffjs'
+// OR
 const array = require('ffjs').array
 ```
 
