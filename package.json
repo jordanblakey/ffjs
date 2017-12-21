@@ -1,6 +1,6 @@
 {
   "name": "ffjs",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Lightweight, modular utility functions for arrays, browser, dates, strings, math, and more.",
   "main": "dist/ff.js",
   "repository": "git@github.com:jordanblakey/ffjs.git",
