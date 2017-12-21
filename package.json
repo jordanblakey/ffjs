@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "babel-preset-env": "^1.6.1"
+  },
+  "name": "extend.js",
+  "version": "1.0.0",
+  "description": "Lightweight, modular utility methods for arrays, browser, dates, strings, math, and more.",
+  "main": "extend.js",
+  "repository": "git@github.com:jordanblakey/extend-js.git",
+  "bugs": "https://github.com/jordanblakey/extend-js/issues",
+  "author": "Jordan Blakey",
+  "license": "MIT"
+}
