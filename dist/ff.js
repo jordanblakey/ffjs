@@ -78,6 +78,7 @@ var log = console.log;
 
 
 // // TEST BROWSER METHODS ////////////////////////////////////////////////////////
+// // THESE WON'T RUN UNLESS IN BROWSER
 // // log('arrayToHtmlList:', browser.arrayToHtmlList(['item 1', 'item 2'],'myListID'))
 // // log('bottomVisible:', browser.bottomVisible())
 // // log('currentUrl:', browser.currentUrl())
