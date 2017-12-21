@@ -6,6 +6,8 @@ Adapted from 30 Seconds of Code, the most excellent exercises by Chalarangelo:
 
 https://chalarangelo.github.io/30-seconds-of-code/
 
+[![npm version](https://badge.fury.io/js/ffjs.svg)](https://badge.fury.io/js/ffjs)
+
 ## Installation
 
 ```sh
