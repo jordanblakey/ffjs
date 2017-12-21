@@ -155,11 +155,6 @@ log('standardDeviation:', math.standardDeviation([10, 2, 38, 23, 38, 23, 21]))
 log('standardDeviation:', math.standardDeviation([10, 2, 38, 23, 38, 23, 21], true))
 
 
-// TEST NODE FUNCTIONS /////////////////////////////////////////////////////////
-log('JSONToFile:', node.JSONToFile({test: "is passed"}, 'src/lib/testJsonFile'))
-log(node.readFileLines('src/lib/test.txt'))
-
-
 // TEST STRING FUNCTIONS ///////////////////////////////////////////////////////
 log('anangrams:', string.anagrams('abc'))
 log('capitalize:', string.capitalize('john'))

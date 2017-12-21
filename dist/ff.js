@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.util = exports.string = exports.node = exports.math = exports.func = exports.date = exports.browser = exports.array = undefined;
+exports.util = exports.string = exports.math = exports.func = exports.date = exports.browser = exports.array = undefined;
 
 var _array = require('./lib/array');
 
@@ -24,10 +24,6 @@ var _func2 = _interopRequireDefault(_func);
 var _math = require('./lib/math');
 
 var _math2 = _interopRequireDefault(_math);
-
-var _node = require('./lib/node');
-
-var _node2 = _interopRequireDefault(_node);
 
 var _string = require('./lib/string');
 
@@ -164,11 +160,6 @@ var log = console.log;
 // log('standardDeviation:', math.standardDeviation([10, 2, 38, 23, 38, 23, 21], true))
 
 
-// TEST NODE METHODS ///////////////////////////////////////////////////////////
-// log('JSONToFile:', node.JSONToFile({test: "is passed"}, 'src/lib/testJsonFile'))
-// log(node.readFileLines('src/lib/test.txt'))
-
-
 // TEST STRING METHODS ///////////////////////////////////////////////////////////
 // log('anangrams:', string.anagrams('abc'))
 // log('capitalize:', string.capitalize('john'))
@@ -226,7 +217,6 @@ _module = Object.assign(_module, _browser2.default);
 _module = Object.assign(_module, _date2.default);
 _module = Object.assign(_module, _func2.default);
 _module = Object.assign(_module, _math2.default);
-_module = Object.assign(_module, _node2.default);
 _module = Object.assign(_module, _string2.default);
 _module = Object.assign(_module, _util2.default);
 
@@ -241,6 +231,5 @@ exports.browser = _browser2.default;
 exports.date = _date2.default;
 exports.func = _func2.default;
 exports.math = _math2.default;
-exports.node = _node2.default;
 exports.string = _string2.default;
 exports.util = _util2.default;

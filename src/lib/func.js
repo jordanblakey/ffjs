@@ -7,8 +7,6 @@ export default func = {
   compose: (...fns) => fns.reduce((f, g) => (...args) => f(g(...args))),
   // Curries a function.
   curry: (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : func.curry.bind(null, fn, arity, ...args),
-  // Logs the name of a function.
-  functionName: fn => (console.debug(fn.name), fn),
   // Performs left-to-right function composition.
   pipeFunctions: (...fns) => fns.reduce((f, g) => (...args) => g(f(...args))),
   // Converts an asynchronous function to return a promise.
