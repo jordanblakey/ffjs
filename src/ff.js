@@ -3,7 +3,6 @@ import browser from './lib/browser'
 import date from './lib/date'
 import func from './lib/func'
 import math from './lib/math'
-import node from './lib/node'
 import string from './lib/string'
 import util from './lib/util'
 
@@ -132,11 +131,6 @@ const log = console.log
 // log('standardDeviation:', math.standardDeviation([10, 2, 38, 23, 38, 23, 21], true))
 
 
-// TEST NODE METHODS ///////////////////////////////////////////////////////////
-// log('JSONToFile:', node.JSONToFile({test: "is passed"}, 'src/lib/testJsonFile'))
-// log(node.readFileLines('src/lib/test.txt'))
-
-
 // TEST STRING METHODS ///////////////////////////////////////////////////////////
 // log('anangrams:', string.anagrams('abc'))
 // log('capitalize:', string.capitalize('john'))
@@ -194,7 +188,6 @@ module = Object.assign(module, browser)
 module = Object.assign(module, date)
 module = Object.assign(module, func)
 module = Object.assign(module, math)
-module = Object.assign(module, node)
 module = Object.assign(module, string)
 module = Object.assign(module, util)
 
@@ -210,7 +203,6 @@ export {
   date,
   func,
   math,
-  node,
   string,
   util
 }
