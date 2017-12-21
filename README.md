@@ -2,7 +2,8 @@
 
 Lightweight, modular utility functions for arrays, browser, dates, strings, math, and more.
 
-Adapted from 30 Seconds of Code, the most excellent exercises by Chalarangelo here:
+Adapted from 30 Seconds of Code, the most excellent exercises by Chalarangelo:
+
 https://chalarangelo.github.io/30-seconds-of-code/
 
 ## Installation
