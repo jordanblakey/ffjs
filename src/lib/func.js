@@ -12,7 +12,5 @@ export default func = {
   // Converts an asynchronous function to return a promise.
   promisify: funct => (...args) => new Promise((resolve, reject) => funct(...args, (err, result) => err ? reject(err) : resolve(result))),
   // Runs an array of promises in series.
-  runPromisesInSeries: ps => ps.reduce((p, next) => p.then(next), Promise.resolve()),
-  // Delays the execution of an asynchronous function.
-  sleep: ms => new Promise(resolve => setTimeout(resolve, ms))
+  runPromisesInSeries: ps => ps.reduce((p, next) => p.then(next), Promise.resolve())
 }
