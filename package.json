@@ -1,6 +1,6 @@
 {
   "name": "ffjs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Lightweight, modular utility functions for arrays, browser, dates, strings, math, and more.",
   "main": "dist/ff.js",
   "repository": "git@github.com:jordanblakey/ffjs.git",
@@ -11,8 +11,7 @@
     "compile": "babel src/ -d dist/",
     "prepublishOnly": "npm run compile"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1"

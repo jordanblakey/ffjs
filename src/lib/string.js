@@ -1,8 +1,6 @@
 // STRING METHODS //////////////////////////////////////////////////////////////
 let string
 export default string = {
-  // Tests that the module was imported correctly.
-  test: () => 'Hello from string module',
   // Generates all anagrams of a string (contains duplicates).
   anagrams: str => {
     if (str.length <= 2) return string.length === 2 ? [str, str[1] + str[0]] : [str]
