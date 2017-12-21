@@ -48,25 +48,58 @@ const log = console.log
 // log('without:', array.without([2, 1, 2, 3], 1, 2))
 // log('zip:', array.zip(['a'], [1, 2], [true, false]))
 
-// TEST BROWSER METHODS ////////////////////////////////////////////////////////
-// log('test:', browser.test())
 
-// log('funcname:', browser.funcname())
-// log('funcname:', browser.funcname())
+// TEST BROWSER METHODS ////////////////////////////////////////////////////////
+// log('arrayToHtmlList:', browser.arrayToHtmlList(['item 1', 'item 2'],'myListID'))
+// log('bottomVisible:', browser.bottomVisible())
+// log('currentUrl:', browser.currentUrl())
+// log('elementIsVisibleInViewport:', browser.elementIsVisibleInViewport(el))
+// log('elementIsVisibleInViewport:', browser.elementIsVisibleInViewport(el, true))
+// log('getScrollPosition:', browser.getScrollPosition())
+// log('getURLParameters:', browser.getURLParameters('http://url.com/page?name=Adam&surname=Smith'))
+// log('redirect:', browser.redirect('https://google.com'))
+// log('scrollToTop:', browser.scrollToTop())
 
 
 // TEST DATE METHODS ///////////////////////////////////////////////////////////
-// log('test:', date.test())
-
-// log('funcname:', date.funcname())
-// log('funcname:', date.funcname())
+// log('getDaysDiffBetweenDates:', date.getDaysDiffBetweenDates(new Date("2017-12-13"), new Date("2017-12-22")))
+// log('JSONToDate:', date.JSONToDate(/Date(1489525200000)/))
+// log('toEnglishDate:', date.toEnglishDate('09/21/2010'))
 
 
 // TEST FUNCTION METHODS ///////////////////////////////////////////////////////
-// log('test:', func.test())
+// func.chainAsync([
+//   next => { console.log('0 seconds'); setTimeout(next, 1000); },
+//   next => { console.log('1 second'); setTimeout(next, 1000); },
+//   next => { console.log('2 seconds'); }
+// ])
 
-// log('funcname:', func.funcname())
-// log('funcname:', func.funcname())
+// const add5 = x => x + 5
+// const multiply = (x, y) => x * y
+// const multiplyAndAdd5 = func.compose(add5, multiply)
+// log(multiplyAndAdd5(5, 2))
+
+// func.curry(Math.pow)(2)(10)
+// func.curry(Math.min, 3)(10)(50)(2)
+// func.functionName(Math.max)
+
+// const add6 = x => x + 6
+// const multiply2 = (x, y) => x * y
+// const multiplyAndAdd6 = func.pipeFunctions(multiply2, add6)
+// log(multiplyAndAdd6(5, 2))
+
+// const delay = func.promisify((d, cb) => setTimeout(cb, d))
+// delay(2000).then(() => console.log('Hi!'))
+
+// const delay2 = (d) => new Promise(r => setTimeout(r, d))
+// func.runPromisesInSeries([() => delay2(1000), () => delay2(2000)])
+
+// async function sleepyWork() {
+//   console.log('I\'m going to sleep for 1 second.');
+//   await func.sleep(1000);
+//   console.log('I woke up after 1 second.');
+// }
+// sleepyWork()
 
 
 // TEST MATH METHODS ///////////////////////////////////////////////////////////
@@ -100,10 +133,8 @@ const log = console.log
 
 
 // TEST NODE METHODS ///////////////////////////////////////////////////////////
-// log('test:', node.test())
-
-// log('funcname:', node.funcname())
-// log('funcname:', node.funcname())
+// log('JSONToFile:', node.JSONToFile({test: "is passed"}, 'src/lib/testJsonFile'))
+// log(node.readFileLines('src/lib/test.txt'))
 
 
 // TEST STRING METHODS ///////////////////////////////////////////////////////////
