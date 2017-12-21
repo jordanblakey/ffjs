@@ -1,4 +1,4 @@
-# ff.js
+# ffjs
 
 Lightweight, modular utility methods for arrays, browser, dates, strings, math, and more.
 
