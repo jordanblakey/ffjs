@@ -1,13 +1,20 @@
 {
-  "dependencies": {
-    "babel-preset-env": "^1.6.1"
-  },
-  "name": "extend.js",
+  "name": "ffjs",
   "version": "1.0.0",
   "description": "Lightweight, modular utility methods for arrays, browser, dates, strings, math, and more.",
-  "main": "extend.js",
-  "repository": "git@github.com:jordanblakey/extend-js.git",
-  "bugs": "https://github.com/jordanblakey/extend-js/issues",
+  "main": "dist/ff.js",
+  "repository": "git@github.com:jordanblakey/ffjs.git",
+  "bugs": "https://github.com/jordanblakey/ffjs/issues",
   "author": "Jordan Blakey",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "compile": "babel src/ -d dist/",
+    "prepublish": "npm run compile"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
 }

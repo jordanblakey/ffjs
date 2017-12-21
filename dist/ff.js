@@ -1,13 +1,45 @@
-import array from './lib/array'
-import browser from './lib/browser'
-import date from './lib/date'
-import func from './lib/func'
-import math from './lib/math'
-import node from './lib/node'
-import string from './lib/string'
-import util from './lib/util'
+'use strict';
 
-const log = console.log
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.util = exports.string = exports.node = exports.math = exports.func = exports.date = exports.browser = exports.array = undefined;
+
+var _array = require('./lib/array');
+
+var _array2 = _interopRequireDefault(_array);
+
+var _browser = require('./lib/browser');
+
+var _browser2 = _interopRequireDefault(_browser);
+
+var _date = require('./lib/date');
+
+var _date2 = _interopRequireDefault(_date);
+
+var _func = require('./lib/func');
+
+var _func2 = _interopRequireDefault(_func);
+
+var _math = require('./lib/math');
+
+var _math2 = _interopRequireDefault(_math);
+
+var _node = require('./lib/node');
+
+var _node2 = _interopRequireDefault(_node);
+
+var _string = require('./lib/string');
+
+var _string2 = _interopRequireDefault(_string);
+
+var _util = require('./lib/util');
+
+var _util2 = _interopRequireDefault(_util);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var log = console.log;
 
 // TEST ARRAY METHODS //////////////////////////////////////////////////////////
 // log('arrayGcd:', array.arrayGcd([4, 8, 12]))
@@ -50,78 +82,76 @@ const log = console.log
 
 
 // TEST BROWSER METHODS ////////////////////////////////////////////////////////
-log('test:', browser.test())
+log('test:', _browser2.default.test());
 
 // log('funcname:', array.funcname())
 // log('funcname:', array.funcname())
 
 
 // TEST DATE METHODS ///////////////////////////////////////////////////////////
-log('test:', date.test())
+log('test:', _date2.default.test());
 
 // log('funcname:', array.funcname())
 // log('funcname:', array.funcname())
 
 
 // TEST FUNCTION METHODS ///////////////////////////////////////////////////////
-log('test:', func.test())
+log('test:', _func2.default.test());
 
 // log('funcname:', array.funcname())
 // log('funcname:', array.funcname())
 
 
 // TEST MATH METHODS ///////////////////////////////////////////////////////////
-log('test:', math.test())
+log('test:', _math2.default.test());
 
 // log('funcname:', array.funcname())
 // log('funcname:', array.funcname())
 
 
 // TEST NODE METHODS ///////////////////////////////////////////////////////////
-log('test:', node.test())
+log('test:', _node2.default.test());
 
 // log('funcname:', array.funcname())
 // log('funcname:', array.funcname())
 
 
 // TEST STRING METHODS ///////////////////////////////////////////////////////////
-log('test:', string.test())
+log('test:', _string2.default.test());
 
 // log('funcname:', array.funcname())
 // log('funcname:', array.funcname())
 
 
 // TEST UTILITY METHODS ///////////////////////////////////////////////////////////
-log('test:', util.test())
+log('test:', _util2.default.test());
 
 // log('funcname:', array.funcname())
 // log('funcname:', array.funcname())
 
 
 // COMBINE IMPORTED MODULES INTO A DEFAULT EXPORT //////////////////////////////
-let module = {}
-module = Object.assign(module, array)
-module = Object.assign(module, browser)
-module = Object.assign(module, date)
-module = Object.assign(module, func)
-module = Object.assign(module, math)
-module = Object.assign(module, node)
-module = Object.assign(module, string)
-module = Object.assign(module, util)
+var _module = {};
+_module = Object.assign(_module, _array2.default);
+_module = Object.assign(_module, _browser2.default);
+_module = Object.assign(_module, _date2.default);
+_module = Object.assign(_module, _func2.default);
+_module = Object.assign(_module, _math2.default);
+_module = Object.assign(_module, _node2.default);
+_module = Object.assign(_module, _string2.default);
+_module = Object.assign(_module, _util2.default);
 
 // Check methods added
 // console.log(module)
-export default module
-
+exports.default = _module;
 
 // ALSO ALLOW THEM TO BE IMPORTED INDEPENDENTLY ////////////////////////////////
-export {
-  array,
-  browser,
-  date,
-  func,
-  math,
-  node,
-  string,
-  util
-}
+
+exports.array = _array2.default;
+exports.browser = _browser2.default;
+exports.date = _date2.default;
+exports.func = _func2.default;
+exports.math = _math2.default;
+exports.node = _node2.default;
+exports.string = _string2.default;
+exports.util = _util2.default;
