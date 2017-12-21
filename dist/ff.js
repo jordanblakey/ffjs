@@ -80,7 +80,6 @@ var log = console.log;
 // log('without:', array.without([2, 1, 2, 3], 1, 2))
 // log('zip:', array.zip(['a'], [1, 2], [true, false]))
 
-
 // TEST BROWSER METHODS ////////////////////////////////////////////////////////
 log('test:', _browser2.default.test());
 
