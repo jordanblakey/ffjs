@@ -104,7 +104,6 @@ log(multiplyAndAdd5(5, 2))
 
 func.curry(Math.pow)(2)(10)
 func.curry(Math.min, 3)(10)(50)(2)
-func.functionName(Math.max)
 
 const add6 = x => x + 6
 const multiply2 = (x, y) => x * y

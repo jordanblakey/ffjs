@@ -35,10 +35,6 @@ exports.default = func = {
     var arity = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : fn.length;
     return arity <= args.length ? fn.apply(undefined, args) : (_func$curry = func.curry).bind.apply(_func$curry, [null, fn, arity].concat(args));
   },
-  // Logs the name of a function.
-  functionName: function functionName(fn) {
-    return console.debug(fn.name), fn;
-  },
   // Performs left-to-right function composition.
   pipeFunctions: function pipeFunctions() {
     for (var _len3 = arguments.length, fns = Array(_len3), _key3 = 0; _key3 < _len3; _key3++) {
