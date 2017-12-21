@@ -9,10 +9,6 @@ function _toArray(arr) { return Array.isArray(arr) ? arr : Array.from(arr); }
 // STRING METHODS //////////////////////////////////////////////////////////////
 var string = void 0;
 exports.default = string = {
-  // Tests that the module was imported correctly.
-  test: function test() {
-    return 'Hello from string module';
-  },
   // Generates all anagrams of a string (contains duplicates).
   anagrams: function anagrams(str) {
     if (str.length <= 2) return string.length === 2 ? [str, str[1] + str[0]] : [str];

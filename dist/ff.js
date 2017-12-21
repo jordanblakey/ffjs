@@ -102,10 +102,33 @@ var log = console.log;
 
 
 // TEST MATH METHODS ///////////////////////////////////////////////////////////
-// log('test:', math.test())
-
-// log('funcname:', math.funcname())
-// log('funcname:', math.funcname())
+// log('arrayAverage:', math.arrayAverage([1, 2, 3]))
+// log('arraySum:', math.arraySum([1, 2, 3, 4]))
+// log('collatz:', math.collatz(8))
+// log('digitize:', math.digitize(2334))
+// log('distance:', math.distance(1, 1, 2, 3))
+// log('factorial:', math.factorial(6))
+// log('fibonacci:', math.fibonacci(5))
+// log('gcd:', math.gcd(8, 36))
+// log('hammingDisance:', math.hammingDistance(2, 3))
+// log('isArmstrongNumber:', math.isArmstrongNumber(1634))
+// log('isArmstrongNumber:', math.isArmstrongNumber(371))
+// log('isArmstrongNumber:', math.isArmstrongNumber(56))
+// log('isDivisible:', math.isDivisible(6, 3))
+// log('isEven:', math.isEven(3))
+// log('isPrime:', math.isPrime(11))
+// log('isPrime:', math.isPrime(12))
+// log('isPrime:', math.isPrime(11))
+// log('lcm:', math.lcm(12, 7))
+// log('median:', math.median(5, 6, 50, 1, -5))
+// log('palindrome:', math.palindrome('taco cat'))
+// log('percentile:', math.percentile([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 6))
+// log('powerset:', math.powerset([1, 2]))
+// log('randomIntegerInRange:', math.randomIntegerInRange(0, 5))
+// log('randomNumberInRange:', math.randomNumberInRange(2, 10))
+// log('round:', math.round(1.005, 2))
+// log('standardDeviation:', math.standardDeviation([10, 2, 38, 23, 38, 23, 21]))
+// log('standardDeviation:', math.standardDeviation([10, 2, 38, 23, 38, 23, 21], true))
 
 
 // TEST NODE METHODS ///////////////////////////////////////////////////////////
