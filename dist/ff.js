@@ -116,10 +116,24 @@ var log = console.log;
 
 
 // TEST STRING METHODS ///////////////////////////////////////////////////////////
-// log('test:', string.test())
-
-// log('funcname:', string.funcname())
-// log('funcname:', string.funcname())
+// log('anangrams:', string.anagrams('abc'))
+// log('capitalize:', string.capitalize('john'))
+// log('capitalizeEveryWord:', string.capitalizeEveryWord('hello world'))
+// log('countVowels:', string.countVowels('foobar'))
+// log('countVowels:', string.countVowels('gym'))
+// log('escapeRegExp:', string.escapeRegExp('(test)'))
+// log('fromCamelCase:', string.fromCamelCase('someDatabaseFieldName', ' '))
+// log('fromCamelCase (snake):', string.fromCamelCase('someDatabaseFieldName', '_'))
+// log('fromCamelCase (kebab):', string.fromCamelCase('someDatabaseFieldName', '-'))
+// log('reverseString:', string.reverseString('foobar'))
+// log('sortCharactersInString:', string.sortCharactersInString('cabbage'))
+// log('stringToArrayOfWords:', string.stringToArrayOfWords('I love javaScript!!'))
+// log('stringToArrayOfWords:', string.stringToArrayOfWords('python, javaScript & coffee'))
+// log('toCamelCase:', string.toCamelCase('some_database_field_name'))
+// log('toCamelCase:', string.toCamelCase('Some label that needs to be camelized'))
+// log('toCamelCase:', string.toCamelCase('some-javascript-property'))
+// log('toCamelCase:', string.toCamelCase('some-mixed_string with spaces_underscores-and-hyphens'))
+// log('truncateString:', string.truncateString('boomerang', 7))
 
 
 // TEST UTILITY METHODS ///////////////////////////////////////////////////////////
