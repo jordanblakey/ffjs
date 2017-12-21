@@ -73,15 +73,16 @@ log('zip:', array.zip(['a'], [1, 2], [true, false]))
 
 
 // TEST BROWSER FUNCTIONS //////////////////////////////////////////////////////
-log('arrayToHtmlList:', browser.arrayToHtmlList(['item 1', 'item 2'],'myListID'))
-log('bottomVisible:', browser.bottomVisible())
-log('currentUrl:', browser.currentUrl())
-log('elementIsVisibleInViewport:', browser.elementIsVisibleInViewport(el))
-log('elementIsVisibleInViewport:', browser.elementIsVisibleInViewport(el, true))
-log('getScrollPosition:', browser.getScrollPosition())
-log('getURLParameters:', browser.getURLParameters('http://url.com/page?name=Adam&surname=Smith'))
-log('redirect:', browser.redirect('https://google.com'))
-log('scrollToTop:', browser.scrollToTop())
+// THESE WON'T RUN UNLESS IN BROWSER
+// log('arrayToHtmlList:', browser.arrayToHtmlList(['item 1', 'item 2'],'myListID'))
+// log('bottomVisible:', browser.bottomVisible())
+// log('currentUrl:', browser.currentUrl())
+// log('elementIsVisibleInViewport:', browser.elementIsVisibleInViewport(el))
+// log('elementIsVisibleInViewport:', browser.elementIsVisibleInViewport(el, true))
+// log('getScrollPosition:', browser.getScrollPosition())
+// log('getURLParameters:', browser.getURLParameters('http://url.com/page?name=Adam&surname=Smith'))
+// log('redirect:', browser.redirect('https://google.com'))
+// log('scrollToTop:', browser.scrollToTop())
 
 
 // TEST DATE FUNCTIONS /////////////////////////////////////////////////////////
@@ -115,13 +116,6 @@ delay(2000).then(() => console.log('Hi!'))
 
 const delay2 = (d) => new Promise(r => setTimeout(r, d))
 func.runPromisesInSeries([() => delay2(1000), () => delay2(2000)])
-
-async function sleepyWork() {
-  console.log('I\'m going to sleep for 1 second.');
-  await func.sleep(1000);
-  console.log('I woke up after 1 second.');
-}
-sleepyWork()
 
 
 // TEST MATH FUNCTIONS /////////////////////////////////////////////////////////

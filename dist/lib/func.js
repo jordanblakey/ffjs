@@ -66,11 +66,5 @@ exports.default = func = {
     return ps.reduce(function (p, next) {
       return p.then(next);
     }, Promise.resolve());
-  },
-  // Delays the execution of an asynchronous function.
-  sleep: function sleep(ms) {
-    return new Promise(function (resolve) {
-      return setTimeout(resolve, ms);
-    });
   }
 };

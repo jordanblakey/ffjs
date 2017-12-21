@@ -37,7 +37,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var log = console.log;
 
-// TEST ARRAY METHODS //////////////////////////////////////////////////////////
+// // TEST ARRAY METHODS //////////////////////////////////////////////////////////
 // log('arrayGcd:', array.arrayGcd([4, 8, 12]))
 // log('arrayMax:', array.arrayMax([10, 1, 5]))
 // log('arrayMin:', array.arrayMin([10, 1, 5]))
@@ -77,25 +77,25 @@ var log = console.log;
 // log('zip:', array.zip(['a'], [1, 2], [true, false]))
 
 
-// TEST BROWSER METHODS ////////////////////////////////////////////////////////
-// log('arrayToHtmlList:', browser.arrayToHtmlList(['item 1', 'item 2'],'myListID'))
-// log('bottomVisible:', browser.bottomVisible())
-// log('currentUrl:', browser.currentUrl())
-// log('elementIsVisibleInViewport:', browser.elementIsVisibleInViewport(el))
-// log('elementIsVisibleInViewport:', browser.elementIsVisibleInViewport(el, true))
-// log('getScrollPosition:', browser.getScrollPosition())
-// log('getURLParameters:', browser.getURLParameters('http://url.com/page?name=Adam&surname=Smith'))
-// log('redirect:', browser.redirect('https://google.com'))
-// log('scrollToTop:', browser.scrollToTop())
+// // TEST BROWSER METHODS ////////////////////////////////////////////////////////
+// // log('arrayToHtmlList:', browser.arrayToHtmlList(['item 1', 'item 2'],'myListID'))
+// // log('bottomVisible:', browser.bottomVisible())
+// // log('currentUrl:', browser.currentUrl())
+// // log('elementIsVisibleInViewport:', browser.elementIsVisibleInViewport(el))
+// // log('elementIsVisibleInViewport:', browser.elementIsVisibleInViewport(el, true))
+// // log('getScrollPosition:', browser.getScrollPosition())
+// // log('getURLParameters:', browser.getURLParameters('http://url.com/page?name=Adam&surname=Smith'))
+// // log('redirect:', browser.redirect('https://google.com'))
+// // log('scrollToTop:', browser.scrollToTop())
 
 
-// TEST DATE METHODS ///////////////////////////////////////////////////////////
+// // TEST DATE METHODS ///////////////////////////////////////////////////////////
 // log('getDaysDiffBetweenDates:', date.getDaysDiffBetweenDates(new Date("2017-12-13"), new Date("2017-12-22")))
 // log('JSONToDate:', date.JSONToDate(/Date(1489525200000)/))
 // log('toEnglishDate:', date.toEnglishDate('09/21/2010'))
 
 
-// TEST FUNCTION METHODS ///////////////////////////////////////////////////////
+// // TEST FUNCTION METHODS ///////////////////////////////////////////////////////
 // func.chainAsync([
 //   next => { console.log('0 seconds'); setTimeout(next, 1000); },
 //   next => { console.log('1 second'); setTimeout(next, 1000); },
@@ -109,7 +109,6 @@ var log = console.log;
 
 // func.curry(Math.pow)(2)(10)
 // func.curry(Math.min, 3)(10)(50)(2)
-// func.functionName(Math.max)
 
 // const add6 = x => x + 6
 // const multiply2 = (x, y) => x * y
@@ -122,15 +121,8 @@ var log = console.log;
 // const delay2 = (d) => new Promise(r => setTimeout(r, d))
 // func.runPromisesInSeries([() => delay2(1000), () => delay2(2000)])
 
-// async function sleepyWork() {
-//   console.log('I\'m going to sleep for 1 second.');
-//   await func.sleep(1000);
-//   console.log('I woke up after 1 second.');
-// }
-// sleepyWork()
 
-
-// TEST MATH METHODS ///////////////////////////////////////////////////////////
+// // TEST MATH METHODS ///////////////////////////////////////////////////////////
 // log('arrayAverage:', math.arrayAverage([1, 2, 3]))
 // log('arraySum:', math.arraySum([1, 2, 3, 4]))
 // log('collatz:', math.collatz(8))
@@ -160,7 +152,7 @@ var log = console.log;
 // log('standardDeviation:', math.standardDeviation([10, 2, 38, 23, 38, 23, 21], true))
 
 
-// TEST STRING METHODS ///////////////////////////////////////////////////////////
+// // TEST STRING METHODS ///////////////////////////////////////////////////////////
 // log('anangrams:', string.anagrams('abc'))
 // log('capitalize:', string.capitalize('john'))
 // log('capitalizeEveryWord:', string.capitalizeEveryWord('hello world'))
@@ -181,7 +173,7 @@ var log = console.log;
 // log('truncateString:', string.truncateString('boomerang', 7))
 
 
-// TEST UTILITY METHODS ///////////////////////////////////////////////////////////
+// // TEST UTILITY METHODS ///////////////////////////////////////////////////////////
 // log('coalesce:', util.coalesce(null, undefined, NaN, 'Waldo'))
 // const customCoalesce = util.coalesceFactory(x => ![null, undefined, '', NaN].includes(x))
 // log('coalesceFactory:', customCoalesce(null, undefined, '', NaN, 'Waldo'))
