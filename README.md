@@ -2,7 +2,7 @@
 
 Lightweight, modular utility functions for arrays, browser, dates, strings, math, and more.
 
-Adapted from [30 Seconds of Code](https://chalarangelo.github.io/30-seconds-of-code/), the most excellent JS exercises from Chalarangelo and co:
+Adapted from [30 Seconds of Code](https://chalarangelo.github.io/30-seconds-of-code/), the most excellent JS exercises from Chalarangelo and co.
 
 [![npm version](https://badge.fury.io/js/ffjs.svg)](https://badge.fury.io/js/ffjs)
 
