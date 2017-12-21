@@ -1,7 +1,7 @@
 {
   "name": "ffjs",
-  "version": "1.0.0",
-  "description": "Lightweight, modular utility methods for arrays, browser, dates, strings, math, and more.",
+  "version": "1.0.3",
+  "description": "Lightweight, modular utility functions for arrays, browser, dates, strings, math, and more.",
   "main": "dist/ff.js",
   "repository": "git@github.com:jordanblakey/ffjs.git",
   "bugs": "https://github.com/jordanblakey/ffjs/issues",
@@ -9,7 +9,7 @@
   "license": "MIT",
   "scripts": {
     "compile": "babel src/ -d dist/",
-    "prepublish": "npm run compile"
+    "prepublishOnly": "npm run compile"
   },
   "dependencies": {
   },

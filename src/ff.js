@@ -49,52 +49,74 @@ const log = console.log
 // log('zip:', array.zip(['a'], [1, 2], [true, false]))
 
 // TEST BROWSER METHODS ////////////////////////////////////////////////////////
-log('test:', browser.test())
+// log('test:', browser.test())
 
-// log('funcname:', array.funcname())
-// log('funcname:', array.funcname())
+// log('funcname:', browser.funcname())
+// log('funcname:', browser.funcname())
 
 
 // TEST DATE METHODS ///////////////////////////////////////////////////////////
-log('test:', date.test())
+// log('test:', date.test())
 
-// log('funcname:', array.funcname())
-// log('funcname:', array.funcname())
+// log('funcname:', date.funcname())
+// log('funcname:', date.funcname())
 
 
 // TEST FUNCTION METHODS ///////////////////////////////////////////////////////
-log('test:', func.test())
+// log('test:', func.test())
 
-// log('funcname:', array.funcname())
-// log('funcname:', array.funcname())
+// log('funcname:', func.funcname())
+// log('funcname:', func.funcname())
 
 
 // TEST MATH METHODS ///////////////////////////////////////////////////////////
-log('test:', math.test())
+// log('test:', math.test())
 
-// log('funcname:', array.funcname())
-// log('funcname:', array.funcname())
+// log('funcname:', math.funcname())
+// log('funcname:', math.funcname())
 
 
 // TEST NODE METHODS ///////////////////////////////////////////////////////////
-log('test:', node.test())
+// log('test:', node.test())
 
-// log('funcname:', array.funcname())
-// log('funcname:', array.funcname())
+// log('funcname:', node.funcname())
+// log('funcname:', node.funcname())
 
 
 // TEST STRING METHODS ///////////////////////////////////////////////////////////
-log('test:', string.test())
+// log('test:', string.test())
 
-// log('funcname:', array.funcname())
-// log('funcname:', array.funcname())
+// log('funcname:', string.funcname())
+// log('funcname:', string.funcname())
 
 
 // TEST UTILITY METHODS ///////////////////////////////////////////////////////////
-log('test:', util.test())
-
-// log('funcname:', array.funcname())
-// log('funcname:', array.funcname())
+// log('coalesce:', util.coalesce(null, undefined, NaN, 'Waldo'))
+// const customCoalesce = util.coalesceFactory(x => ![null, undefined, '', NaN].includes(x))
+// log('coalesceFactory:', customCoalesce(null, undefined, '', NaN, 'Waldo'))
+// log('extendHex:', util.extendHex('#03f'))
+// log('getType:', util.getType(3))
+// log('getType:', util.getType(new Set([1, 2, 3])))
+// log('hexToRGB:', util.hexToRGB('#27ae60ff'))
+// log('hexToRGB:', util.hexToRGB('27ae60'))
+// log('hexToRGB:', util.hexToRGB('#fff'))
+// log('isArray:', util.isArray([1]))
+// log('isArray:', util.isArray(1))
+// log('isBoolean:', util.isBoolean(null))
+// log('isBoolean:', util.isBoolean(true))
+// log('isFunction:', util.isFunction('x'))
+// log('isFunction:', util.isFunction(x => x))
+// log('isNumber:', util.isNumber('1'))
+// log('isNumber:', util.isNumber(1))
+// log('isString:', util.isString(10))
+// log('isString:', util.isString('10'))
+// log('isSymbol:', util.isSymbol('x'))
+// log('isSymbol:', util.isSymbol(Symbol('x')))
+// log('toOrdinalSuffix:', util.toOrdinalSuffix(123))
+// log('validateEmail:', util.validateEmail('example@example.com'))
+// log('validateEmail:', util.validateEmail('example'))
+// log('validateNumber:', util.validateNumber('129387.987987'))
+// log('validateNumber:', util.validateNumber(129387.987987))
 
 
 // COMBINE IMPORTED MODULES INTO A DEFAULT EXPORT //////////////////////////////

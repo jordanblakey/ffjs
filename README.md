@@ -1,6 +1,6 @@
 # ff.js
 
-Lightweight, modular utility methods for arrays, browser, dates, strings, math, and more.
+Lightweight, modular utility functions for arrays, browser, dates, strings, math, and more.
 
 ## Installation
 
